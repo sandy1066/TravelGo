@@ -1,5 +1,4 @@
 <?php
-// Initialize the session
 session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
@@ -113,14 +112,11 @@ body{
     </form>
 	
 	<script>
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
 		
 		function myFunction() {
 		document.getElementById("myDropdown").classList.toggle("show");
 		}
 
-		// Close the dropdown if the user clicks outside of it
 		window.onclick = function(e) {
 		if (!e.target.matches('.dropbtn')) {
 		var myDropdown = document.getElementById("myDropdown");
